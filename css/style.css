@@ -1,0 +1,360 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+/* Global properties */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body */
+body {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a.git-link {
+    color: dodgerblue;
+}
+
+/* Navigation */
+nav {
+    background-color: dodgerblue;
+    color: white;
+    width: 100%;
+    height: 60px;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo-container>p {
+    cursor: pointer;
+    font-size: 1.4em;
+}
+
+.links-container {
+    padding: 0 100px;
+}
+
+.links-container>ul {
+    display: inline-flex;
+    list-style: none;
+
+}
+
+.links-container>ul>li {
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px;
+}
+
+/* Header */
+/* Left side */
+#header {
+    background-color: #262261;
+    max-width: 100vw;
+    height: 891px;
+    display: flex;
+}
+
+.image-container {
+    height: 100%;
+    width: 50%;
+    background-image: url(../img/mockups/ma_liste_mockup.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Right side */
+.text-container {
+    padding: 5%;
+    height: 100%;
+    width: 50%;
+}
+
+.text-container>h1 {
+    color: #fff;
+    font-size: 5em;
+}
+
+.text-container>h2 {
+    margin-top: 0px;
+    color: #fff;
+    font-size: 1em;
+    font-weight: lighter;
+}
+
+.text-container>h3 {
+    margin-top: 15px;
+    color: rgb(180, 180, 180);
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+#android {
+    max-width: 20px;
+}
+
+.text-container>p {
+    color: #fff;
+    margin-top: 30px;
+    max-width: 400px;
+    line-height: 1.5em;
+}
+
+/* Section Application */
+#app {
+    background-color: #FDFD96;
+    max-width: 100vw;
+    height: 891px;
+    display: flex;
+}
+
+/* Left side */
+.text-container-2 {
+    padding: 5%;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-container-2>h2 {
+    margin-left: 20%;
+    font-size: 5em;
+}
+
+.text-container-2>p {
+    margin-top: 30px;
+    max-width: 400px;
+    line-height: 1.5em;
+}
+
+/* Right side */
+.image-container-2 {
+    width: 50%;
+    background-image: url(../img/mockups/Three_Smartphones_Mockup.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Section git */
+#git {
+    background-color: #262261;
+    max-width: 100vw;
+    height: 891px;
+    display: flex;
+}
+
+/* Left side */
+.image-container-3 {
+    height: 100%;
+    width: 50%;
+    background-image: url(../img/global/dependencies.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Right Side */
+.text-container-3 {
+    padding: 5%;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-container-3>h2 {
+    color: #fff;
+    margin-top: 0px;
+    font-size: 5em;
+}
+
+.text-container-3>p {
+    color: #fff;
+    margin-top: 30px;
+    max-width: 400px;
+    line-height: 1.5em;
+}
+
+/* Footer */
+footer {
+    color: #fff;
+    font-size: 0.6em;
+    background-color: rgb(20, 20, 20);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Download button */
+button {
+    margin-top: 50px;
+    position: relative;
+    padding: 1em 1.8em;
+    outline: none;
+    border: 1px solid #303030;
+    background: #212121;
+    color: dodgerblue;
+    letter-spacing: 2px;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
+    transition-delay: 0.6s;
+}
+
+button span {
+    position: absolute;
+}
+
+button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ae00ff);
+}
+
+button:hover span:nth-child(1) {
+    left: 100%;
+    transition: 0.7s;
+}
+
+button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #001eff);
+}
+
+button:hover span:nth-child(3) {
+    right: 100%;
+    transition: 0.7s;
+    transition-delay: 0.35s;
+}
+
+button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ae00ff);
+}
+
+button:hover span:nth-child(2) {
+    top: 100%;
+    transition: 0.7s;
+    transition-delay: 0.17s;
+}
+
+button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #001eff);
+}
+
+button:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 0.7s;
+    transition-delay: 0.52s;
+}
+
+button:active {
+    background: #ae00af;
+    background: linear-gradient(to top right, #ae00af, #001eff);
+    color: #bfbfbf;
+    box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
+    transition: 0.1s;
+}
+
+button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-child(2) {
+    transition: none;
+    transition-delay: none;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 980px) {
+    nav {
+        display: none;
+    }
+
+    #header {
+        padding-top: 50px;
+        flex-direction: column;
+    }
+
+    .image-container {
+       display: none;
+    }
+
+    .text-container {
+        width: 100vw;
+    }
+
+    .text-container>h1 {
+        font-size: 3em;
+    }
+
+    #app {
+        flex-direction: column;
+    }
+
+    .text-container-2 {
+        width: 100vw;
+    }
+
+    .image-container-2 {
+        height: 50vh;
+        width: 100vw;
+    }
+
+    .text-container-2>h2 {
+        margin: 0;
+        font-size: 3em;
+    }
+
+    #git {
+        flex-direction: column;
+    }
+
+    .image-container-3 {
+        display: none;
+    }
+
+    .text-container-3 {
+        width: 100vw;
+    }
+
+    .text-container-3>h2 {
+        font-size: 3em;
+    }
+
+}
