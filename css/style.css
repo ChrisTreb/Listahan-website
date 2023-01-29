@@ -25,37 +25,15 @@ a.git-link {
     color: dodgerblue;
 }
 
-/* Navigation */
-nav {
-    background-color: dodgerblue;
-    color: white;
-    width: 100%;
-    height: 60px;
-    padding: 0 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+/* logo */
+.logo-container {
+    position: absolute;
+    top: 30px;
+    left: 30px;
 }
 
 .logo-container>p {
-    cursor: pointer;
-    font-size: 1.4em;
-}
-
-.links-container {
-    padding: 0 100px;
-}
-
-.links-container>ul {
-    display: inline-flex;
-    list-style: none;
-
-}
-
-.links-container>ul>li {
-    cursor: pointer;
-    margin: 5px;
-    padding: 10px;
+    font-size: 18px;
 }
 
 /* Header */
@@ -312,7 +290,7 @@ button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-chi
     }
 
     .image-container {
-       display: none;
+        display: none;
     }
 
     .text-container {
